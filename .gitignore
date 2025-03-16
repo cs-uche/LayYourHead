@@ -1,0 +1,12 @@
+library/
+local/
+cellar/
+lock/
+python/
+sandbox/
+staging/
+rvenv/
+.Rproj.user/*
+.Rhistory
+.RData
+.Ruserdata
