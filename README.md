@@ -47,16 +47,16 @@ renv::restore()
 ```
 
 - (Optional)Run the script to download and process the data
-```Rscript scripts/shelter_data_pipeline.R --download --process```
-To only download  
-```Rscript scripts/shelter_data_pipeline.R --download```
-To only process the data   
+```Rscript scripts/shelter_data_pipeline.R --download --process```  
+**To download only**  
+```Rscript scripts/shelter_data_pipeline.R --download```  
+**To process the data only**  
 ```Rscript scripts/shelter_data_pipeline.R` --process```
 
 - Run the application
   - From RStudio IDE, open the `src` folder, then `app.R`, and click on the Run App button
   !["run app locally"](./img/run_app_Rstudio.png)
-  - Alternatively, run it from the terminal: 
+  - Alternatively, run it from the terminal:  
   ```Rscript -e "shiny::runApp('src/app.R', port = <YOUR PORT NUMBER>, launch.browser = FALSE)"```
   - Or from the console:
   ```
