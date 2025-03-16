@@ -5,3 +5,8 @@ lock/
 python/
 sandbox/
 staging/
+rvenv/
+.Rproj.user/*
+.Rhistory
+.RData
+.Ruserdata
