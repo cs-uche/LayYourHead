@@ -18,8 +18,21 @@ bc_theme <- create_theme(
 df <- read.csv("../data/clean/homeless-shelter-locations.csv")  
 
 ui <- dashboardPage(
+  # custom_header(
+  #   title = "MyLareShiny",
+  #   site = "https://github.com/laresbernardo/lareshiny",
+  #   font = "Montserrat",
+  #   logosrc = "logo.png",
+  #   text = Sys.Date()
+  # ),
+  # 
+  dashboardHeader(
+    title = "LayYourHead",
+    leftUi = tags$li(div(img(src = 'favicon.ico', height = "35px"),
+                style = "padding-right:10px; padding-top:10px; padding-bottom:10px;"),
+            class = "dropdown")
+  ),
   
-  dashboardHeader(title = "Vancouver Shelters"),  
   
   dashboardSidebar(
     width = 250,
@@ -64,6 +77,8 @@ ui <- dashboardPage(
       )
     ),
     
+    tags$head(tags$link(rel = "shortcut icon", href = "favicon.ico")),
+    
     # Sticky Footer
     tags$footer(
       style = "
@@ -78,7 +93,7 @@ ui <- dashboardPage(
         font-size: 12px;
       ",
       tags$p(
-        "This dashboard was designed to support non-profit organizations in assisting displaced individuals across Vancouver."
+        "LayYourHead: A Vancouver Shelter Guide was designed to support non-profit organizations in assisting displaced individuals across Vancouver."
       ),
       tags$p(
         "Data sourced from ",
