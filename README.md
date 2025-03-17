@@ -15,6 +15,7 @@ This dataset is sourced from the City of Vancouver’s [Open Data Portal](https:
 
 Installation from Docker
 ----
+All installation steps for the Docker option assume you are running the commands in terminal  
 - Ensure your Docker engine is running.
 - Pull the specific Docker image for the app:
 ```
@@ -41,12 +42,12 @@ Installation from the Github Repository
 ```
 git clone https://github.ubc.ca/schisom/LayYourHead.git
 ```
-- Set up your environment using the `renv.lock` file:
+- Set up your environment using the `renv.lock` file; **running the code below in the R console**:
 ```
 renv::restore()
 ```
 
-- (Optional)Run the script to download and process the data
+- (Optional)**From your terminal** run the script to download and process the data
 ```Rscript scripts/shelter_data_pipeline.R --download --process```  
 **To download only**  
 ```Rscript scripts/shelter_data_pipeline.R --download```  
