@@ -1,12 +1,3 @@
-# required_packages <- c("arrow", "sf", "dplyr", "optparse")
-# 
-# for (pkg in required_packages) {
-#   if (!require(pkg, character.only = TRUE)) {
-#     install.packages(pkg, repos = "http://cran.us.r-project.org")
-#     library(pkg, character.only = TRUE)
-#   }
-# }
-
 library("arrow")
 library("sf")
 library("dplyr")
