@@ -39,7 +39,7 @@ Installation from the Github Repository
 
 - Clone the GitHub repository:
 ```
-git clone <REPO_URL>
+git clone https://github.ubc.ca/schisom/LayYourHead.git
 ```
 - Set up your environment using the `renv.lock` file:
 ```
