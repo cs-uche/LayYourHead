@@ -18,14 +18,6 @@ bc_theme <- create_theme(
 df <- read.csv("../data/clean/homeless-shelter-locations.csv")  
 
 ui <- dashboardPage(
-  # custom_header(
-  #   title = "MyLareShiny",
-  #   site = "https://github.com/laresbernardo/lareshiny",
-  #   font = "Montserrat",
-  #   logosrc = "logo.png",
-  #   text = Sys.Date()
-  # ),
-  # 
   dashboardHeader(
     title = "LayYourHead",
     leftUi = tags$li(div(img(src = 'favicon.ico', height = "35px"),
