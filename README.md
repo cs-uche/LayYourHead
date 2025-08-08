@@ -40,7 +40,7 @@ Installation from the Github Repository
 
 - Clone the GitHub repository:
 ```
-git clone https://github.ubc.ca/schisom/LayYourHead.git
+git clone https://github.com/cs-uche/LayYourHead.git
 ```
 - Set up your environment using the `renv.lock` file; **running the code below in the R console**:
 ```
